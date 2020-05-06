@@ -1,0 +1,160 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+#nav{
+    width: 100%;
+    background: #292F36;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4em;
+    position: fixed;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+   
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+
+.my-protfolio{
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-weight:600;
+}
+
+.burger{
+    display: none;
+}
+
+.i{
+    background: white;
+    height: 5px;
+    width: 25px;
+    margin: 3px;
+}
+
+#profile{
+   
+    background: #23181C;
+    height: 600px;
+}
+#me{
+    height: 400px;
+    width: 30%;
+    background-image: url(IMG_20181220_152819_586.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#info{
+    text-align: center;
+    color: White;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+#background{
+    background-color: #FFEC94;
+    height: 400px;
+    text-align: center;
+}   
+
+.bk-img{
+    height: 150px;
+    width: 200px;
+    margin: 30px;
+    align-items: center;
+
+}
+
+#my-history{
+    height: 600px;
+    background-color: #E9E7E8 ;
+    text-align: center;
+}
+
+.hs-img{
+    height: fit-content;
+    width: 25%;
+    margin: 10px;
+}
+
+#edu{
+    width: 500px;
+    margin-bottom: 150px;
+}
+
+
+@media screen and (max-width: 900px){
+    nav{
+      flex-direction: column;
+    }
+
+    .nav-links{
+        display: none;
+        position: fixed;
+        flex-direction: column ;
+        width: 100%;
+        align-items: center;
+        height: 200px;
+        top: 4rem;
+        background-color:  #292F36;   
+    }
+
+    .burger{
+        display: block;
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        cursor: pointer;
+    }
+
+    .nav-links li {
+        padding: 0.3em;
+    }
+
+    .nav-links.active{
+        display: flex;        
+    }
+
+    #background{
+        height: fit-content;
+        background-color:#FFEC94;;
+        text-align: center;
+    }
+
+    #my-history{
+        height: fit-content;
+    }
+
+    .hs-img{
+        width: 100%;
+    }
+}
+
